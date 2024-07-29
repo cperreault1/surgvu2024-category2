@@ -136,7 +136,7 @@ class SurgVU_classify(ClassificationAlgorithm):
             frame_dict = self.step_predict_json_sample()
             step_detection = self.dummy_step_prediction_model()
 
-            frame_dict['slice_nr'] = i
+            frame_dict['frame_nr'] = i
             
             frame_dict["step_label"] = step_detection
 
